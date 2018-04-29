@@ -3,6 +3,7 @@
 # joy-shell jpo (c) 2018	
 #
 # Support script to run joy on a familiy alignment from a master alignment file
+# requires atm2seq and joy to be on path
 #
 version="0.1"
 #
@@ -37,7 +38,7 @@ done
 echo " "
 echo "joy_shell: file processing complete! prepared joy.ali"
 echo " "
-echo "joy_shell: running joy with alignment width " $1
+echo "joy_shell: running joy with alignment width " $2
 #
 joy --nwidth $2 joy.ali
 #
